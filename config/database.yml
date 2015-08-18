@@ -17,7 +17,7 @@
 default: &default
   adapter: postgresql
   host: localhost
-  port: 5432
+  port: 5400
   username: docker
   password: docker
   encoding: unicode
@@ -28,7 +28,7 @@ default: &default
 development:
   <<: *default
 #database: docker
-  database: shih_development
+  database: sh_dev
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.

@@ -33,6 +33,8 @@ gem 'devise', '3.4.1'
 gem 'devise-bootstrap-views'
 gem 'nokogiri'
 gem 'seed-fu'
+gem 'sidekiq', '3.3.2'  
+gem 'sidetiq'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

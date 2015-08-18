@@ -18,7 +18,6 @@ class Share < ActiveRecord::Base
 
   end
 
-
   def load_share_data
 
     doc = Nokogiri::HTML(open(self.website_address))
@@ -50,7 +49,8 @@ class Share < ActiveRecord::Base
 
   def money_to_float(money)
     if money
-      money[1, money.length].to_f
+      money.gsub(/[$]/, '').to_f
+      #money[1, money.length].to_f
     end
   end
 
